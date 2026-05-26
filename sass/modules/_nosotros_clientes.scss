@@ -1,0 +1,67 @@
+.clientes {
+
+  margin-top: 6rem;
+
+  &__hero {
+    position: relative;
+    height: 20rem;
+    background-image: url('../img/clientes.png');
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.45);
+    }
+  }
+
+  &__title {
+    position: relative;
+    color: white;
+    font-size: 4rem;
+    letter-spacing: .3rem;
+    z-index: 1;
+  }
+
+  &__slider {
+    overflow: hidden;
+    padding: 1.5rem 0;
+    background: #fff;
+  }
+
+  &__track {
+    display: flex;
+    gap: 6rem;
+    width: max-content;
+
+    animation: scrollClientes 25s linear infinite;
+  }
+
+  &__img {
+    width: 12rem;
+    height: auto;
+    object-fit: contain;
+    transition: all .3s ease;
+  }
+
+  &__img:hover {
+    transform: scale(1.05);
+  }
+
+}
+
+@keyframes scrollClientes {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}

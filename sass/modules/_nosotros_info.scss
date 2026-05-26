@@ -1,0 +1,35 @@
+.nosotros-info {
+  display: flex;
+  gap: 4rem;
+  padding: 6rem 2rem;
+  align-items: flex-start;
+
+  &__box,
+  &__content {
+    flex: 1;
+  }
+
+  &__box {
+    background: white;
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: transform .3s ease;
+  }
+
+  &__box:hover {
+    transform: translateY(-5px);
+  }
+
+  &__title {
+    font-size: 2.2rem;
+    color: #086487;
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+    line-height: 1.7;
+    text-align: justify;
+  }
+}

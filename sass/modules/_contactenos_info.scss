@@ -1,0 +1,200 @@
+.contacto {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 7rem;
+  padding: 8rem 0;
+  align-items: start;
+
+  // =========================
+  // IZQUIERDA
+  // =========================
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-size: 3rem;
+    line-height: 1.1;
+    font-weight: 800;
+    color: #086487;
+    margin-bottom: 3rem;
+  }
+
+  &__text {
+    font-size: 1.7rem;
+    line-height: 1.7;
+    color: #5f6773;
+    margin-bottom: 2.5rem;
+  }
+
+  // =========================
+  // GRID MINI CARDS
+  // =========================
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  // =========================
+  // CARDS
+  // =========================
+
+  &__card {
+    background: #fff;
+    border: 1px solid #d8ecec;
+    border-radius: 3rem;
+    padding: 3rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    transition: all .3s ease;
+  }
+
+  &__card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+  }
+
+  &__card--large {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  &__icon {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  &__subtitle {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #086487;
+    margin-bottom: 1rem;
+  }
+
+  &__description {
+    font-size: 1.8rem;
+    line-height: 1.7;
+    color: #5f6773;
+  }
+
+  // =========================
+  // FORMULARIO
+  // =========================
+
+  &__form-container {
+    background: #fff;
+    border: 1px solid #d8ecec;
+    border-radius: 4rem;
+    padding: 5rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__group--full {
+    grid-column: 1 / -1;
+  }
+
+  &__group label {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #086487;
+    margin-bottom: 1rem;
+  }
+
+  &__group input,
+  &__group textarea {
+    width: 100%;
+    border: 1.5px solid #cdd5df;
+    border-radius: 1.8rem;
+    padding: 1.8rem 2rem;
+    font-size: 1.8rem;
+    font-family: inherit;
+    outline: none;
+    transition: all .3s ease;
+  }
+
+  &__group input:focus,
+  &__group textarea:focus {
+    border-color: #0b7a82;
+    box-shadow: 0 0 0 4px rgba(11,122,130,.1);
+  }
+
+  &__group textarea {
+    resize: none;
+    height: 18rem;
+  }
+
+  // =========================
+  // BOTÓN
+  // =========================
+
+  &__button {
+    grid-column: 1 / -1;
+    border: none;
+    background: #0b8a8f;
+    color: white;
+    height: 7rem;
+    border-radius: 2rem;
+    font-size: 2.2rem;
+    font-weight: 700;
+
+    cursor: pointer;
+    transition: all .3s ease;
+  }
+
+  &__button:hover {
+    background: #086487;
+    transform: translateY(-2px);
+  }
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 1200px) {
+  .contacto {
+    grid-template-columns: 1fr;
+    gap: 5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacto {
+
+    &__title {
+      font-size: 3.8rem;
+    }
+
+    &__grid {
+      grid-template-columns: 1fr;
+    }
+
+    &__form {
+      grid-template-columns: 1fr;
+    }
+
+    &__form-container {
+      padding: 3rem;
+      border-radius: 2.5rem;
+    }
+
+    &__button {
+      font-size: 1.8rem;
+    }
+  }
+}

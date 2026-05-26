@@ -1,0 +1,30 @@
+$font-Barlow: "Barlow", sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    //TAMAÑO DE FUENTE BASE/ROOT  = 16px
+    //UNIDAD DE MEDIDA QUE SON REM Y EM
+    /*
+          16px ----> 100%
+          10px ----> ?
+    */
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $font-Barlow;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style: none;
+}

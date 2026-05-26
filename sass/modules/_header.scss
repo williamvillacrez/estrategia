@@ -1,0 +1,42 @@
+.navbar {
+    background: linear-gradient(
+        135deg,
+        #086487,
+        #45A0B3
+  );
+    font-size: 1.7rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 0;
+    
+  }
+
+  &__logo img {
+    display: block;
+    height: 7rem;
+    width: auto;
+  }
+
+  &__menu {
+    display: flex;
+    gap: 2rem;
+  }
+
+  &__item {
+    list-style: none;
+  }
+
+  &__link {
+    color: white;
+    font-weight: 500;
+    padding: 1rem 1.5rem;
+    //border: 2px solid white;
+    text-decoration: none;
+  }
+}
+

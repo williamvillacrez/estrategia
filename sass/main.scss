@@ -1,0 +1,35 @@
+@use "base/base";
+
+@use "modules/header";
+
+@use "modules/hero";
+
+@use "modules/article_about";
+
+@use "modules/article_proyectos";
+
+@use "modules/sectores";
+
+@use "modules/footer";
+
+@use "modules/nosotros";
+
+@use "modules/nosotros_hero";
+
+@use "modules/nosotros_info";
+
+@use "modules/nosotros_clientes";
+
+@use "modules/servicios_hero";
+
+@use "modules/servicios_servicios";
+
+@use "modules/proyectos_hero";
+
+@use "modules/proyectos_proyectos";
+
+ @use "modules/contactenos_hero";
+
+ @use "modules/contactenos_info";
+
+@use "base/constantes";

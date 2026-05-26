@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctenos - Estrategia S.A.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+    
+</head>
+<body>
+    <header class="navbar">
+        <nav class="navbar__container contenedor">
+            <a href="index.html" class="navbar__logo">
+            <img src="img/Logo_Estrategia_3.png" alt="Logo de la empresa">
+            </a>
+
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index.html" class="navbar__link navbar__link">Inicio</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="nosotros.html" class="navbar__link">Nosotros</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="servicios.html" class="navbar__link">Servicios</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="proyectos.html" class="navbar__link navbar__link--active">Proyectos</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="contactenos.html" class="navbar__link navbar__link--active">Contáctenos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-contactenos">
+        <img src="img/contactenos.png" alt="Equipo de trabajo" class="hero-contactenos__img">
+
+        <div class="hero-contactenos__overlay">
+            <h1 class="hero-contactenos__title">CONTÁCTENOS</h1>
+        </div>
+    </section>
+
+    <section class="contacto contenedor">
+
+    <!-- IZQUIERDA -->
+    <div class="contacto__info">
+
+        <h2 class="contacto__title">
+            Estamos listos para ayudarte a desarrollar tu próximo proyecto
+        </h2>
+
+        <p class="contacto__text">
+            Estamos listos para ayudarte a desarrollar tu próximo proyecto
+            con soluciones eficientes, seguras y de alta calidad.
+        </p>
+
+        <p class="contacto__text">
+            Contáctanos y uno de nuestros especialistas se comunicará
+            contigo a la brevedad.
+        </p>
+
+        <!-- DIRECCIÓN -->
+        <div class="contacto__card contacto__card--large">
+
+            <div class="contacto__icon">
+                📍
+            </div>
+
+            <h3 class="contacto__subtitle">
+                Dirección
+            </h3>
+
+            <p class="contacto__description">
+                Av. Petit Thouars N° 4598 - Miraflores
+            </p>
+
+        </div>
+
+        <!-- MINI CARDS -->
+        <div class="contacto__grid">
+
+            <div class="contacto__card">
+                <div class="contacto__icon">📞</div>
+
+                <h3 class="contacto__subtitle">
+                    Teléfono
+                </h3>
+
+                <p class="contacto__description">
+                    222 3448 - 945065656
+                </p>
+            </div>
+
+            <div class="contacto__card">
+                <div class="contacto__icon">✉️</div>
+
+                <h3 class="contacto__subtitle">
+                    E-mail
+                </h3>
+
+                <p class="contacto__description">
+                    contacto@estrategia.pe
+                </p>
+            </div>
+
+            <div class="contacto__card">
+                <div class="contacto__icon">🕒</div>
+
+                <h3 class="contacto__subtitle">
+                    Horario
+                </h3>
+
+                <p class="contacto__description">
+                    L-V: 8:30am - 7:00pm
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- FORMULARIO -->
+    <div class="contacto__form-container">
+
+        <form class="contacto__form"
+                action="https://formsubmit.co/contacto@estrategia.pe"
+                method="POST">
+
+            <div class="contacto__group">
+                <label>Nombre Completo *</label>
+                <input type="text" name="nombre" placeholder="Ej. Luis Ramos">
+            </div>
+
+            <div class="contacto__group">
+                <label>Empresa *</label>
+                <input type="text" name="empresa" placeholder="Nombre de su Organización">
+            </div>
+
+            <div class="contacto__group">
+                <label>Cargo *</label>
+                <input type="text" name="cargo" placeholder="Ej. Gerente de Proyectos">
+            </div>
+
+            <div class="contacto__group">
+                <label>Correo electrónico *</label>
+                <input type="email" name="email" placeholder="correo@empresa.com">
+            </div>
+
+            <div class="contacto__group">
+                <label>Teléfono *</label>
+                <input type="text" name="telefono" placeholder="+51 000 000 000">
+            </div>
+
+            <div class="contacto__group">
+                <label>Asunto *</label>
+                <input type="text" name="asunto" placeholder="Motivo del contacto">
+            </div>
+
+            <div class="contacto__group contacto__group--full">
+                <label>Mensaje</label>
+                <textarea name="mensaje" placeholder="Cuéntanos sobre su proyecto o requerimiento..."></textarea>
+            </div>
+
+            <input type="hidden" name="_captcha" value="false">
+
+            <input type="hidden" name="_subject" 
+            value="Nuevo contacto desde la web - Estrategia S.A.">
+
+            <input type="hidden" name="_template" value="table">
+
+            <button type="submit" class="contacto__button">
+                Enviar Mensaje ✈
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+    
+</body>
+</html>

@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Estrategia S.A.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    
+</head>
+<body>
+    <header class="navbar">
+        <nav class="navbar__container contenedor">
+            <a href="index.html" class="navbar__logo">
+            <img src="img/Logo_Estrategia_3.png" alt="Logo de la empresa">
+            </a>
+
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index.html" class="navbar__link navbar__link">Inicio</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="nosotros.html" class="navbar__link">Nosotros</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="servicios.html" class="navbar__link">Servicios</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="proyectos.html" class="navbar__link navbar__link--active">Proyectos</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="contactenos.html" class="navbar__link">Contáctenos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-proyectos">
+        <img src="img/proyectos.png" alt="Equipo de trabajo" class="hero-proyectos__img">
+
+        <div class="hero-proyectos__overlay">
+            <h1 class="hero-proyectos__title">NUESTROS PROYECTOS</h1>
+        </div>
+
+    </section>
+
+    <section class="proyectos">
+
+        <!-- HEADER -->
+        <div class="proyectos__header">
+            <p class="proyectos__text">
+            Experiencia comprobada en proyectos desarrollados para diversos sectores estratégicos a nivel nacional.
+            </p>
+        </div>
+
+        <!-- FILTROS -->
+        <div class="proyectos__filters">
+
+            <button class="proyectos__filter proyectos__filter--active" data-filter="todos">Todos</button>
+            <button class="proyectos__filter" data-filter="mineria">Minería</button>
+            <button class="proyectos__filter" data-filter="electricidad">Electricidad</button>
+            <button class="proyectos__filter" data-filter="agricultura">Agricultura</button>
+            <button class="proyectos__filter" data-filter="puertos">Puertos</button>
+            <button class="proyectos__filter" data-filter="cooperacion">Cooperación Internacional</button>
+            <button class="proyectos__filter" data-filter="hidrocarburos">Hidrocarburos</button>
+            <button class="proyectos__filter" data-filter="construccion">Construcción</button>
+
+        </div>
+
+        <!-- GRID -->
+        <div class="proyectos__grid">
+
+            <!-- CARD 1 -->
+              <article class="proyectos__card" data-category="hidrocarburos">
+                  <img src="img/logos/Pluspetrol.png" alt="Proyecto Hidrocarburos" class="proyectos__img">
+                  <div class="proyectos__content">
+                      <span class="proyectos__empresa">Plus Petrol Perú Corporation S.A.</span>
+                      <h3 class="proyectos__subtitle">Valorización Económica</h3>
+                      <p class="proyectos__description">
+                      Valoración de Impactos Ambientales y Sociales para la Etapa de Operaciones Locación Mipaya 
+                      y Líneas de Conducción de Gas Mipaya Pagoreni en el Lote 56.
+                      </p>
+                      <div class="proyectos__info">
+                      <div class="proyectos__meta">📅 2014</div>
+                      <div class="proyectos__meta">📍 Cusco, Perú</div>
+                      </div>
+                  </div>
+              </article>
+
+            <!-- CARD 2 -->
+            <article class="proyectos__card" data-category="hidrocarburos">
+            <img src="img/logos/Novum.png" alt="Proyecto Hidrocarburos" class="proyectos__img">
+            <div class="proyectos__content">
+                <span class="proyectos__empresa">Novum Energy Trading Corp</span>
+                <h3 class="proyectos__subtitle">Supervisión Ambiental</h3>
+                <p class="proyectos__description">
+                Supervisión de los Impactos Ambientales y Sociales por Derrame de Crudo en el Canal Puinahua - Lote 95
+                </p>
+                <div class="proyectos__info">
+                <div class="proyectos__meta">📅 2024</div>
+                <div class="proyectos__meta">📍 Loreto, Perú</div>
+                </div>
+            </div>
+            </article>
+
+            <!-- CARD 3 -->
+            <article class="proyectos__card" data-category="electricidad">
+            <img src="img/logos/Larsen_group.png" alt="Proyecto Electricidad" class="proyectos__img">
+            <div class="proyectos__content">
+                <span class="proyectos__empresa">Larsen Group SAC</span>
+                <h3 class="proyectos__subtitle">Informe Técnico Sustentario (ITS)</h3>
+                <p class="proyectos__description">
+                Elaboración del ITS del Proyecto de Renovación del Transformador existente de 4MVS a 9MVA en 
+                la SubEstación de Transformación SET y Celdas anexas de 60 Kv y 22KV Santa María
+                </p>
+                <div class="proyectos__info">
+                <div class="proyectos__meta">📅 2025</div>
+                <div class="proyectos__meta">📍 Cusco, Perú</div>
+                </div>
+            </div>
+            </article>
+
+            <!-- CARD 4 -->
+            <article class="proyectos__card" data-category="electricidad">
+            <img src="img/logos/Larsen_group.png" alt="Proyecto Electricidad" class="proyectos__img">
+            <div class="proyectos__content">
+                <span class="proyectos__empresa">Larsen Group SAC</span>
+                <h3 class="proyectos__subtitle">Plan de Monitoreo Arqueológico (PMAR)</h3>
+                <p class="proyectos__description">
+                Elaboración y Ejecución del Plan de Monitoreo Arqueológico - PMAR (Santa María)
+                </p>
+                <div class="proyectos__info">
+                <div class="proyectos__meta">📅 2025</div>
+                <div class="proyectos__meta">📍 Cusco, Perú</div>
+                </div>
+            </div>
+            </article>
+
+            <!-- CARD 5 -->
+            <article class="proyectos__card" data-category="mineria">
+            <img src="img/logos/Sol_de_Andes.png" alt="Proyecto Mineria" class="proyectos__img">
+            <div class="proyectos__content">
+                <span class="proyectos__empresa">Sol de Los Andes</span>
+                <h3 class="proyectos__subtitle">Exploración Inicial</h3>
+                <p class="proyectos__description">
+                Gestión Arqueológica, Técnica y Social para Prospección Exploratoria Inicial del Proyecto Don Eloy (Zona Norte)
+                </p>
+                <div class="proyectos__info">
+                <div class="proyectos__meta">📅 2025</div>
+                <div class="proyectos__meta">📍 Piura, Perú</div>
+                </div>
+            </div>
+            </article>
+
+            <!-- CARD 6 -->
+            <article class="proyectos__card" data-category="mineria">
+            <img src="img/logos/Sol_de_Andes.png" alt="Proyecto Mineria" class="proyectos__img">
+            <div class="proyectos__content">
+                <span class="proyectos__empresa">Sol de Los Andes</span>
+                <h3 class="proyectos__subtitle">Propección Geológica y Seguridad</h3>
+                <p class="proyectos__description">
+                Servicio de Prospección Geológica y Diagnóstico de Seguridad entre los 
+                Grupos de Mineros Artesanales de la Concesión Barreno
+                </p>
+                <div class="proyectos__info">
+                <div class="proyectos__meta">📅 2020</div>
+                <div class="proyectos__meta">📍 Arequipa, Perú</div>
+                </div>
+            </div>
+            </article>
+
+            <!-- CARD 7 -->
+            <article class="proyectos__card" data-category="construccion">
+            <img src="img/logos/Grupo_Imagina.png" alt="Proyecto Construccion" class="proyectos__img">
+            <div class="proyectos__content">
+                <span class="proyectos__empresa">Inversiones Inmobiliarias de Las Condes S.A.- GRUPO IMAGINA</span>
+                <h3 class="proyectos__subtitle">Relaciones Comunitarias</h3>
+                <p class="proyectos__description">
+                Servicio de Relacionamiento Comunitario y Asesoría Legal para minimizar las contingencias o posibles
+                conflictos sociales del Proyecto Magic  Ocean - San Miguel - Lima Metropolitana
+                </p>
+                <div class="proyectos__info">
+                <div class="proyectos__meta">📅 2016</div>
+                <div class="proyectos__meta">📍 Lima, Perú</div>
+                </div>
+            </div>
+            </article>
+
+            <!-- CARD 8 -->
+            <article class="proyectos__card" data-category="construccion">
+                <img src="img/logos/wr.png" alt="Proyecto Construccion" class="proyectos__img">
+                <div class="proyectos__content">
+                    <span class="proyectos__empresa">WR S.A.</span>
+                    <h3 class="proyectos__subtitle">Relaciones Comunitarias</h3>
+                    <p class="proyectos__description">
+                    Gestión Social en el Condominio Tres - Comas
+                    </p>
+                    <div class="proyectos__info">
+                    <div class="proyectos__meta">📅 2024</div>
+                    <div class="proyectos__meta">📍 Lima, Perú</div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- CARD 9 -->
+            <article class="proyectos__card" data-category="agricultura">
+                <img src="img/logos/Olmos.png" alt="Proyecto Agricultura" class="proyectos__img">
+                <div class="proyectos__content">
+                    <span class="proyectos__empresa">H2olmos S.A.</span>
+                    <h3 class="proyectos__subtitle">Plan Ambiental Detallado</h3>
+                    <p class="proyectos__description">
+                    Servicio de Elaboración de un Plan Ambiental Detallado (PAD) del Proyecto
+                    Irrigación Olmos y Obtención de Certificación Ambiental (30%)
+                    </p>
+                    <div class="proyectos__info">
+                    <div class="proyectos__meta">📅 2025</div>
+                    <div class="proyectos__meta">📍 Lambayeque, Perú</div>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- CARD 10 -->
+              <article class="proyectos__card" data-category="agricultura">
+                  <img src="img/logos/Solidaridad.png" alt="Proyecto Agricultura" class="proyectos__img">
+                  <div class="proyectos__content">
+                      <span class="proyectos__empresa">ONG Solidaridad</span>
+                      <h3 class="proyectos__subtitle">Línea Base</h3>
+                      <p class="proyectos__description">
+                      Línea Base del Proyecto SAFE - Pasco, Junín, Ucayali y Huánuco
+                      </p>
+                      <div class="proyectos__info">
+                      <div class="proyectos__meta">📅 2025</div>
+                      <div class="proyectos__meta">📍 Pasco, Junín, Ucayali y Huánuco - Perú</div>
+                      </div>
+                  </div>
+              </article>
+
+            <!-- CARD 11 -->
+            <article class="proyectos__card" data-category="cooperacion">
+            <img src="img/logos/CARE.png" alt="Proyecto Cooperacion" class="proyectos__img">
+            <div class="proyectos__content">
+                <span class="proyectos__empresa">CARE Perú</span>
+                <h3 class="proyectos__subtitle">Evaluación Final</h3>
+                <p class="proyectos__description">
+                Consultoría para la Evaluación Final del Proyecto "Ella Alimenta el Mundo"
+                </p>
+                <div class="proyectos__info">
+                <div class="proyectos__meta">📅 2022</div>
+                <div class="proyectos__meta">📍 Ica-Piura-Lima, Perú</div>
+                </div>
+            </div>
+            </article>
+
+            <!-- CARD 12 -->
+            <article class="proyectos__card" data-category="cooperacion">
+            <img src="img/logos/WorldVision.webp" alt="Proyecto Cooperacion" class="proyectos__img">
+            <div class="proyectos__content">
+                <span class="proyectos__empresa">World Visión Perú</span>
+                <h3 class="proyectos__subtitle">Línea Base</h3>
+                <p class="proyectos__description">
+                Estudio de Línea Base del Proyecto Mujeres y Jóvenes a la Vanguardía, 
+                Emprendiendo e Innovando - Ccataca y Ocongate - provincia de Quispicanchis - región Cusco
+                </p>
+                <div class="proyectos__info">
+                <div class="proyectos__meta">📅 2025</div>
+                <div class="proyectos__meta">📍 Cusco, Perú</div>
+                </div>
+            </div>
+            </article>
+
+            <!-- CARD 13 -->
+            <article class="proyectos__card" data-category="puertos">
+            <img src="img/logos/Gapash.png" alt="Proyecto Puertos" class="proyectos__img">
+            <div class="proyectos__content">
+                <span class="proyectos__empresa">Gapash Consultoría Integral E.I.R.L</span>
+                <h3 class="proyectos__subtitle">Línea Base</h3>
+                <p class="proyectos__description">
+                Servicio de Elaboración de LBS para la Actualización de EIAsd del Proyecto
+                Mejoramiento y Ampliación de la Boca de Entrada en el Terminal Portuario del Callao - Lima. Línea Base Social, 
+                Valorización Económica y Talleres y audiencia pública
+                </p>
+                <div class="proyectos__info">
+                <div class="proyectos__meta">📅 2024</div>
+                <div class="proyectos__meta">📍 Lima, Perú</div>
+                </div>
+            </div>
+            </article>
+
+            <!-- CARD 14 -->
+            <article class="proyectos__card" data-category="puertos">
+            <img src="img/logos/Gapash.png" alt="Proyecto Puertos" class="proyectos__img">
+            <div class="proyectos__content">
+                <span class="proyectos__empresa">Gapash Consultoría Integral E.I.R.L</span>
+                <h3 class="proyectos__subtitle">Línea Base</h3>
+                <p class="proyectos__description">
+                Elaboración de Línea Base Social de un EIA Semidetallado para el “Proyecto de 
+                Instalación de una Marina Deportiva Recreativa en la Bahía de Ancón”
+                </p>
+                <div class="proyectos__info">
+                <div class="proyectos__meta">📅 2019</div>
+                <div class="proyectos__meta">📍 Lima, Perú</div>
+                </div>
+            </div>
+            </article>
+
+            <!-- CARD 15 -->
+            <article class="proyectos__card" data-category="hidrocarburos">
+            <img src="img/logos/PanAndean.gif" alt="Proyecto Hidrocarburos" class="proyectos__img">
+            <div class="proyectos__content">
+                <span class="proyectos__empresa">Pan Andean Resources PLC Peru</span>
+                <h3 class="proyectos__subtitle">Clima Social</h3>
+                <p class="proyectos__description">
+                Estudio de Clima Social Político y Expectativas de Coyuntura en el Norte del Región Puno - Lote 141 - Pan Andean
+                </p>
+                <div class="proyectos__info">
+                <div class="proyectos__meta">📅 2012</div>
+                <div class="proyectos__meta">📍 Puno, Perú</div>
+                </div>
+            </div>
+            </article>
+
+            <!-- CARD 16 -->
+            <article class="proyectos__card" data-category="hidrocarburos">
+            <img src="img/logos/Olympic.png" alt="Proyecto Hidrocarburos" class="proyectos__img">
+            <div class="proyectos__content">
+                <span class="proyectos__empresa">Olympic del Peru INC Sucursal del Peru</span>
+                <h3 class="proyectos__subtitle">Informe Técnico Sustentario</h3>
+                <p class="proyectos__description">
+                Elaboración del ITS del Proyecto de Ampliación del Sistema de Recolección del 
+                Gasoducto - Paita desde la Estación la Estación de Fiscalización - Tablazo - Colán 
+                hasta la Estación de Fiscalización Lantera - Lote XIII-A - Piura
+                </p>
+                <div class="proyectos__info">
+                <div class="proyectos__meta">📅 2017</div>
+                <div class="proyectos__meta">📍 Piura, Perú</div>
+                </div>
+            </div>
+            </article>
+
+            <!-- CARD 17 -->
+            <article class="proyectos__card" data-category="electricidad">
+                <img src="img/logos/San_Gaban.png" alt="Proyecto Electricidad" class="proyectos__img">
+                <div class="proyectos__content">
+                    <span class="proyectos__empresa">Empresa Generadora de Electricidad San Gabán S.A.</span>
+                    <h3 class="proyectos__subtitle">Evaluación Final</h3>
+                    <p class="proyectos__description">
+                    Evaluación de Impacto del Subprograma Plan Lector del Programa de RSE de San Gabán en las I.E.
+                    de los distritos de San Gabán, Macusani, Corani, Ollachea y Corani
+                    </p>
+                    <div class="proyectos__info">
+                    <div class="proyectos__meta">📅 2022</div>
+                    <div class="proyectos__meta">📍 Puno, Perú</div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- CARD 18 -->
+            <article class="proyectos__card" data-category="electricidad">
+                <img src="img/logos/Umbrella.png" alt="Proyecto Electricidad" class="proyectos__img">
+                <div class="proyectos__content">
+                    <span class="proyectos__empresa">Umbrella EcoConsulting SAC </span>
+                    <h3 class="proyectos__subtitle">Línea Base</h3>
+                    <p class="proyectos__description">
+                    Elaboración de Línea Base Social del Proyecto Central Eólica "Los Vientos". Ocucaje, Santiago, Ica
+                    </p>
+                    <div class="proyectos__info">
+                    <div class="proyectos__meta">📅 2021</div>
+                    <div class="proyectos__meta">📍 Ica, Perú</div>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- CARD 19 -->
+              <article class="proyectos__card" data-category="mineria">
+                  <img src="img/logos/Corono.png" alt="Proyecto Mineria" class="proyectos__img">
+                  <div class="proyectos__content">
+                      <span class="proyectos__empresa">Sociedad Minera Corono S.A.</span>
+                      <h3 class="proyectos__subtitle">Responsabilidad Social Empresarial</h3>
+                      <p class="proyectos__description">
+                      Fortalecimiento, Implementación, Seguimiento y Articulación de las Actividades Productivas en 
+                      la CC.CC. San Lorenzo de Alis - Yauyos - Lima
+                      </p>
+                      <div class="proyectos__info">
+                      <div class="proyectos__meta">📅 2018</div>
+                      <div class="proyectos__meta">📍 Lima, Perú</div>
+                      </div>
+                  </div>
+              </article>
+
+            <!-- CARD 20 -->
+            <article class="proyectos__card" data-category="mineria">
+            <img src="img/logos/Geoservice.png" alt="Proyecto Mineria" class="proyectos__img">
+            <div class="proyectos__content">
+                <span class="proyectos__empresa">Geoservice Ambiental SAC</span>
+                <h3 class="proyectos__subtitle">Línea Base</h3>
+                <p class="proyectos__description">
+                Servicio de Elaboración de la Línea Base del Proyecto de la MEIAd de la 
+                Unidad Minera El Toro - La Libertad
+                </p>
+                <div class="proyectos__info">
+                <div class="proyectos__meta">📅 2024</div>
+                <div class="proyectos__meta">📍 La Libertad, Perú</div>
+                </div>
+            </div>
+            </article>
+
+            <!-- CARD 21 -->
+            <article class="proyectos__card" data-category="construccion">
+            <img src="img/logos/EMIN.png" alt="Proyecto Construccion" class="proyectos__img">
+            <div class="proyectos__content">
+                <span class="proyectos__empresa">EMIN Geoestructuras SAC</span>
+                <h3 class="proyectos__subtitle">Constatación Notarial</h3>
+                <p class="proyectos__description">
+                Constatación Notarial de Vecinos Colindantes del Colegio La Brea - Negritos - 
+                Gestión de RR.CC.
+                </p>
+                <div class="proyectos__info">
+                <div class="proyectos__meta">📅 2022</div>
+                <div class="proyectos__meta">📍 Piura, Perú</div>
+                </div>
+            </div>
+            </article>
+
+            <!-- CARD 22 -->
+            <article class="proyectos__card" data-category="construccion">
+            <img src="img/logos/Grupo_Imagina.png" alt="Proyecto Construccion" class="proyectos__img">
+            <div class="proyectos__content">
+                <span class="proyectos__empresa">Inversiones Inmobiliarias del Caucaso S.A. - Grupo Imagina</span>
+                <h3 class="proyectos__subtitle">Relaciones Comunitarias</h3>
+                <p class="proyectos__description">
+                Servicio de Asesoria Legal y Relacionamiento Comunitario para  minimizar las contingencias
+                o posibles conflictos sociales del Proyecto T Tower – San Isidro –Lima Metropolitana
+                </p>
+                <div class="proyectos__info">
+                <div class="proyectos__meta">📅 2015</div>
+                <div class="proyectos__meta">📍 Lima, Perú</div>
+                </div>
+            </div>
+            </article>
+
+            <!-- CARD 23 -->
+            <article class="proyectos__card" data-category="agricultura">
+            <img src="img/logos/Avanzar_Rural.png" alt="Proyecto Agricultura" class="proyectos__img">
+            <div class="proyectos__content">
+                <span class="proyectos__empresa">Avanzar Rural</span>
+                <h3 class="proyectos__subtitle">Sistematización de Experiencias</h3>
+                <p class="proyectos__description">
+                Sistematización de la Experiencia de Comercialización desde el emfoque de los 
+                encadenamientos productivos, destacando el rol fundamental de las alianzas 
+                estrategicas en las OPP con negocios rurales beneficiados por el Proyecto Avanzar Rural
+                </p>
+                <div class="proyectos__info">
+                <div class="proyectos__meta">📅 2025</div>
+                <div class="proyectos__meta">📍 Perú</div>
+                </div>
+            </div>
+            </article>
+
+            <!-- CARD 24 -->
+            <article class="proyectos__card" data-category="agricultura">
+            <img src="img/logos/Avanzar_Rural.png" alt="Proyecto Agricultura" class="proyectos__img">
+            <div class="proyectos__content">
+                <span class="proyectos__empresa">Avanzar Rural</span>
+                <h3 class="proyectos__subtitle">Sistematización de Experiencias</h3>
+                <p class="proyectos__description">
+                Elaboración de las Sistematización de la Experiencia de Comercialización 
+                desde el emfoque de los encadenamientos productivos, destacando el rol 
+                fundamental de las alianzas estrategicas en las OPP con negocios rurales 
+                beneficiados por el Proyecto Avanzar Rural
+                </p>
+                <div class="proyectos__info">
+                <div class="proyectos__meta">📅 2025</div>
+                <div class="proyectos__meta">📍 Perú</div>
+                </div>
+            </div>
+            </article>
+
+            <!-- CARD 25 -->
+            <article class="proyectos__card" data-category="cooperacion">
+            <img src="img/logos/WorldVision.webp" alt="Proyecto Cooperacion" class="proyectos__img">
+            <div class="proyectos__content">
+                <span class="proyectos__empresa">World Visión Perú</span>
+                <h3 class="proyectos__subtitle">Línea Base</h3>
+                <p class="proyectos__description">
+                Estudio de Línea Base del Proyecto Mujeres y Jóvenes e al Vanguardía, 
+                Emprendiendo e Innovando - Ccatca y Ocongate - provincia de Quispicanchis - región Cusco
+                </p>
+                <div class="proyectos__info">
+                <div class="proyectos__meta">📅 2024</div>
+                <div class="proyectos__meta">📍 Cusco, Perú</div>
+                </div>
+            </div>
+            </article>
+
+            <!-- CARD 26 -->
+            <article class="proyectos__card" data-category="cooperacion">
+                <img src="img/logos/CARE.png" alt="Proyecto cooperacion" class="proyectos__img">
+                <div class="proyectos__content">
+                    <span class="proyectos__empresa">CARE Perú</span>
+                    <h3 class="proyectos__subtitle">Evaluación Final</h3>
+                    <p class="proyectos__description">
+                    Proyecto Promoviendo el Desarrollo Económico local con transparencia y diálogo
+                    entre las comunidades y gobiernos locales y empresa privada – Barrick
+                    </p>
+                    <div class="proyectos__info">
+                    <div class="proyectos__meta">📅 2014</div>
+                    <div class="proyectos__meta">📍 Ancash, Perú</div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- CARD 27 -->
+            <article class="proyectos__card" data-category="Puertos">
+                <img src="img/logos/Gapash.png" alt="Proyecto Puertos" class="proyectos__img">
+                <div class="proyectos__content">
+                    <span class="proyectos__empresa">Gapash Consultoría Integral E.I.R.L</span>
+                    <h3 class="proyectos__subtitle">Línea Base</h3>
+                    <p class="proyectos__description">
+                    Servicio de Elaboración de LBS para la Actualización de EIAsd del Proyecto 
+                    Mejoramiento y Ampliación de la Boca de Entrada en el Terminal Portuario del 
+                    Callao - Lima. Línea Base Social, Valorización Económica, Talleres y audiencia pública
+                    </p>
+                    <div class="proyectos__info">
+                    <div class="proyectos__meta">📅 2024</div>
+                    <div class="proyectos__meta">📍 Callao, Perú</div>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- CARD 28 -->
+              <article class="proyectos__card" data-category="hidrocarburos">
+                  <img src="img/logos/Petro.png" alt="Proyecto Hidrocarburos" class="proyectos__img">
+                  <div class="proyectos__content">
+                      <span class="proyectos__empresa">Petro Bayovar INC Sucursal del Perú</span>
+                      <h3 class="proyectos__subtitle">Evaluación Ambiental Preliminar</h3>
+                      <p class="proyectos__description">
+                      Evaluación preliminar (EVAP) para solicitar la clasificación del instrumento de gestión y Elaboración de una DIA para el Proyecto Prospección Sísmica 2D Lote XXVII.
+                      </p>
+                      <div class="proyectos__info">
+                      <div class="proyectos__meta">📅 2016</div>
+                      <div class="proyectos__meta">📍 Piura, Perú</div>
+                      </div>
+                  </div>
+              </article>
+
+            <!-- CARD 29 -->
+            <article class="proyectos__card" data-category="hidrocarburos">
+            <img src="img/logos/GEMA.png" alt="Proyecto Hidrocarburos" class="proyectos__img">
+            <div class="proyectos__content">
+                <span class="proyectos__empresa">Servicios Geograficos y Medio Ambiente SAC. </span>
+                <h3 class="proyectos__subtitle">Estudios Ambientales</h3>
+                <p class="proyectos__description">
+                Consultoría en Gerencia de Proyectos. EIA Proyecto de Adquisición Sísmica 2D 
+                y Perforación Exploratoria desde Tres Plataformas - Lote 133 - Petrolífera Del
+                Perú SAC - Región Huánuco, Ucayali, Pasco.
+                </p>
+                <div class="proyectos__info">
+                <div class="proyectos__meta">📅 2015</div>
+                <div class="proyectos__meta">📍 Huánuco, Ucayali, Pasco, Perú</div>
+                </div>
+            </div>
+            </article>
+
+            <!-- CARD 30 -->
+            <article class="proyectos__card" data-category="electricidad">
+            <img src="img/logos/Umbrella.png" alt="Proyecto Electricidad" class="proyectos__img">
+            <div class="proyectos__content">
+                <span class="proyectos__empresa">Umbrella EcoConsulting SAC </span>
+                <h3 class="proyectos__subtitle">Estudio Cualitativo</h3>
+                <p class="proyectos__description">
+                Estudio Cualitativo del Proyecto Parque Eólico EMMA. Sehura, región Piura                </p>
+                <div class="proyectos__info">
+                <div class="proyectos__meta">📅 2021</div>
+                <div class="proyectos__meta">📍 Piura, Perú</div>
+                </div>
+            </div>
+            </article>
+
+            <!-- CARD 31 -->
+            <article class="proyectos__card" data-category="electricidad">
+            <img src="img/logos/La_Virgen.png" alt="Proyecto Electricidad" class="proyectos__img">
+            <div class="proyectos__content">
+                <span class="proyectos__empresa">Hidroeléctrica La Virgen</span>
+                <h3 class="proyectos__subtitle">CIRA</h3>
+                <p class="proyectos__description">
+                Aprobación y Ejecución del Plan de Monitoreo Arqueológico
+                (PMA) para la Reubicación de la Torre 22 - LT 138KV La Virgen - SE Caripa
+                </p>
+                <div class="proyectos__info">
+                <div class="proyectos__meta">📅 2019</div>
+                <div class="proyectos__meta">📍 Junín, Perú</div>
+                </div>
+            </div>
+            </article>
+
+            <!-- CARD 32 -->
+            <article class="proyectos__card" data-category="mineria">
+            <img src="img/logos/Sol_de_Andes.png" alt="Proyecto Mineria" class="proyectos__img">
+            <div class="proyectos__content">
+                <span class="proyectos__empresa">Sol de Los Andes</span>
+                <h3 class="proyectos__subtitle">Evaluación Preliminar</h3>
+                <p class="proyectos__description">
+                Servicio de Mapeo y Evaluación de Actores Sociales - Evaluación sobre las 
+                Condiciones Territoriales Sociales, Económicas, Ambientales, Culturales de la 
+                Concesión Don Eloy  - Orcopampa - Condesuyos - Arequipa
+                </p>
+                <div class="proyectos__info">
+                <div class="proyectos__meta">📅 2025</div>
+                <div class="proyectos__meta">📍 Arequipa, Perú</div>
+                </div>
+            </div>
+            </article>
+            
+            <!-- CARD 33 -->
+            <article class="proyectos__card" data-category="mineria">
+            <img src="img/logos/Sol_de_Andes.png" alt="Proyecto Mineria" class="proyectos__img">
+            <div class="proyectos__content">
+                <span class="proyectos__empresa">Sol de Los Andes</span>
+                <h3 class="proyectos__subtitle">Exploración Inicial</h3>
+                <p class="proyectos__description">
+                Informe Ecosistemico y Biodiversidad para la Evaluación de Compatibilidad
+                de Actividades Mineras en  Zona Amortiguamiento de la RPSCC - Exp. Don César,
+                Doña Margarita, Yessika y Don Jaime - 4 petitorios
+                </p>
+                <div class="proyectos__info">
+                <div class="proyectos__meta">📅 2025</div>
+                <div class="proyectos__meta">📍 Arequipa, Perú</div>
+                </div>
+            </div>
+            </article>
+
+            <!-- CARD 34 -->
+            <article class="proyectos__card" data-category="construccion">
+            <img src="img/logos/Grupo_Imagina.png" alt="Proyecto Construccion" class="proyectos__img">
+            <div class="proyectos__content">
+                <span class="proyectos__empresa">Inversiones Inmobiliarias Mar Rojo S.A. - Grupo Imagina</span>
+                <h3 class="proyectos__subtitle">Relaciones Comunitarias</h3>
+                <p class="proyectos__description">
+                Servicio de Asesoria Legal y Relacionamiento Comunitario para  minimizar las contingencias o
+                posibles conflictos sociales del Proyecto Excellence – Surquillo  –Lima Metropolitana
+                </p>
+                <div class="proyectos__info">
+                <div class="proyectos__meta">📅 2015</div>
+                <div class="proyectos__meta">📍 Lima, Perú</div>
+                </div>
+            </div>
+            </article>
+
+            <!-- CARD 35 -->
+            <article class="proyectos__card" data-category="construccion">
+                <img src="img/logos/CARE.png" alt="Proyecto Construccion" class="proyectos__img">
+                <div class="proyectos__content">
+                    <span class="proyectos__empresa">CARE Perú</span>
+                    <h3 class="proyectos__subtitle">Sistematización de Experiencias</h3>
+                    <p class="proyectos__description">
+                    Sistematización de Experiencias Exitosas de la Participación
+                    de la Mujer en Actividades Agropecuarias. Pachacamac, Sullana e Ica
+                    </p>
+                    <div class="proyectos__info">
+                    <div class="proyectos__meta">📅 2022</div>
+                    <div class="proyectos__meta">📍 Ica, Perú</div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- CARD 36 -->
+            <article class="proyectos__card" data-category="agricultura">
+                <img src="img/logos/Agro_Rural.png" alt="Proyecto Agricultura" class="proyectos__img">
+                <div class="proyectos__content">
+                    <span class="proyectos__empresa">Agrorural</span>
+                    <h3 class="proyectos__subtitle">Línea Base</h3>
+                    <p class="proyectos__description">
+                    Servicio Especializado en la Elaboración de Línea Base para el PIP "Mejoramiento
+                    de la Organización, Asociatividad, e Inclusión en los Mercados de los Pequeños y
+                    Medianos Productores Agrarios de Amazonas, Cajamarca y La Libertad"
+                    </p>
+                    <div class="proyectos__info">
+                    <div class="proyectos__meta">📅 2023</div>
+                    <div class="proyectos__meta">📍 Amazonas, Cajamarca y La Libertad, Perú</div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- CARD 37 -->
+            <article class="proyectos__card" data-category="hidrocarburos">
+            <img src="img/logos/GEMA.png" alt="Proyecto Hidrocarburos" class="proyectos__img">
+            <div class="proyectos__content">
+                <span class="proyectos__empresa">Servicios Geograficos y Medio Ambiente SAC. </span>
+                <h3 class="proyectos__subtitle">Estudios Ambientales</h3>
+                <p class="proyectos__description">
+                EIA Exploración y Explotación de
+                Hidrocarburos de un Pozo Exploratorio y 461 Pozos de Desarrollo y Facilidades 
+                de Producción - Zona Espectativa - Lote XIII-B - Piura - Olympic Perú Sucursal 
+                del Perú. Propuesta de Sensibilización de Actores - Lote 105 - Puno - Siboil del Perú
+                </p>
+                <div class="proyectos__info">
+                <div class="proyectos__meta">📅 2015</div>
+                <div class="proyectos__meta">📍 Puno, Perú</div>
+                </div>
+            </div>
+            </article>
+
+        </div>
+
+        <!-- PAGINACIÓN -->
+        <div class="proyectos__pagination">
+
+            <button class="proyectos__page proyectos__page--active" data-page="1">1</button>
+            <button class="proyectos__page" data-page="2">2</button>
+            <button class="proyectos__page" data-page="3">3</button>
+            <button class="proyectos__page" data-page="4">4</button>
+            <button class="proyectos__page" data-page="5">5</button>
+
+        </div>
+
+        </section>
+
+    
+
+    <footer class="footer">
+        <div class="footer__description contenedor">
+
+            <div class="footer__text">
+                <img src="img/Logo_Estrategia_3.png" alt="Logo Estrategia" class="footer__img">
+
+                <h3 class="footer__subtitle">
+                    Gestores del desarrollo social y participativo
+                </h3>
+
+                <p>
+                    A la vanguardia por haber logrado efectivizar con sus
+                    intervenciones la ansiada, pero difícil, alianza estratégica
+                    entre Estado, Empresa y Sociedad. ¡Reto logrado!
+                </p>
+            </div>
+
+            <div class="footer__text">
+
+                <h3 class="footer__subtitle">Contacto</h3>
+
+                <p class="footer__place">Lima</p>
+
+                <p>
+                    Av. Petit Thouars N° 4598 - Miraflores
+                </p>
+
+                <p>
+                    Teléfonos: 222 3448 - 945065656
+                </p>
+
+                <p>
+                    contacto@estrategia.com.pe
+                </p>
+
+                <a 
+                    href="https://wa.me/51945065656?text=Hola,%20quisiera%20más%20información"
+                    target="_blank"
+                    class="footer__btn"
+                >
+                    CONTÁCTENOS
+                </a>
+
+            </div>
+
+        </div>
+
+        <p class="footer__copy">
+            &copy; 2026 Estrategia S.A. Todos los derechos reservados.
+        </p>
+    </footer>
+
+<!-- tu sección proyectos -->
+    <script src="js/proyectos.js"></script>
+
+</body>
+</html>
