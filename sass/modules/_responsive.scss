@@ -1,0 +1,168 @@
+/* ==========================================
+   NAVBAR - MENÚ MÓVIL (HAMBURGUESA)
+========================================== */
+.navbar__toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 4rem;
+  height: 4rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+
+  span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+
+  &--active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  &--active span:nth-child(2) {
+    opacity: 0;
+  }
+  &--active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+/* ==========================================
+   RESPONSIVE GENERAL
+========================================== */
+@media (max-width: 1200px) {
+  html {
+    font-size: 58%;
+  }
+
+  .servicios__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .proyectos__grid {
+    grid-template-columns: repeat(2, 28rem);
+  }
+}
+
+@media (max-width: 900px) {
+  .navbar__toggle {
+    display: flex;
+  }
+
+  .navbar__menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    background: linear-gradient(135deg, #086487, #45A0B3);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+
+    &--open {
+      max-height: 40rem;
+    }
+  }
+
+  .navbar__item {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar__link {
+    display: block;
+    padding: 1.5rem;
+  }
+
+  .nosotros-info {
+    flex-wrap: wrap;
+
+    &__box,
+    &__content {
+      flex: 1 1 100%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 56%;
+  }
+
+  .hero {
+    height: 45rem;
+
+    &__contenido {
+      max-width: 90%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    &__title {
+      font-size: 3.2rem;
+    }
+
+    &__subtitle {
+      font-size: 1.8rem;
+    }
+  }
+
+  .hero-nosotros,
+  .hero-servicios,
+  .hero-proyectos,
+  .hero-contactenos {
+    height: 25rem;
+
+    &__title {
+      font-size: 3.2rem;
+      text-align: center;
+      padding: 0 2rem;
+    }
+  }
+
+  .clientes__title {
+    font-size: 2.6rem;
+  }
+
+  .title {
+    font-size: 2.8rem;
+  }
+
+  .servicios__grid,
+  .proyectos__grid {
+    grid-template-columns: 1fr;
+    justify-content: stretch;
+  }
+
+  .footer__description {
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 52%;
+  }
+
+  .navbar__logo img {
+    height: 5rem;
+  }
+
+  .footer__img {
+    width: 18rem;
+  }
+
+  .hero__btn {
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+  }
+}

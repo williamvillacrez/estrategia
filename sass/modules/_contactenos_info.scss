@@ -129,8 +129,8 @@
 
   &__group input:focus,
   &__group textarea:focus {
-    border-color: #0b7a82;
-    box-shadow: 0 0 0 4px rgba(11,122,130,.1);
+    border-color: #45A0B3;
+    box-shadow: 0 0 0 4px rgba(69,160,179,.15);
   }
 
   &__group textarea {
@@ -145,7 +145,7 @@
   &__button {
     grid-column: 1 / -1;
     border: none;
-    background: #0b8a8f;
+    background: #45A0B3;
     color: white;
     height: 7rem;
     border-radius: 2rem;

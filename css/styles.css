@@ -17,6 +17,10 @@ body {
   line-height: 1.5;
 }
 
+h1, h2, h3 {
+  font-family: "Poppins", sans-serif;
+}
+
 a {
   text-decoration: none;
 }
@@ -55,6 +59,7 @@ ul, ol {
   font-weight: 500;
   padding: 1rem 1.5rem;
   text-decoration: none;
+  position: relative;
 }
 
 .hero {
@@ -216,7 +221,7 @@ ul, ol {
 .proyectos__subtitle {
   font-size: 1.8rem;
   margin: 1rem 0;
-  color: #093773;
+  color: #086487;
 }
 .proyectos__date {
   font-size: 1.3rem;
@@ -230,7 +235,7 @@ ul, ol {
 .proyectos__link {
   display: inline-block;
   margin-top: 1.5rem;
-  color: #005898;
+  color: #086487;
   font-weight: 600;
   text-decoration: none;
 }
@@ -336,6 +341,17 @@ ul, ol {
 
 .navbar__link--active {
   color: white;
+  font-weight: 700;
+}
+.navbar__link--active::after {
+  content: "";
+  position: absolute;
+  left: 1.5rem;
+  right: 1.5rem;
+  bottom: 0.3rem;
+  height: 3px;
+  border-radius: 2px;
+  background: white;
 }
 
 .hero-nosotros {
@@ -826,8 +842,8 @@ ul, ol {
   transition: all 0.3s ease;
 }
 .contacto__group input:focus, .contacto__group textarea:focus {
-  border-color: #0b7a82;
-  box-shadow: 0 0 0 4px rgba(11, 122, 130, 0.1);
+  border-color: #45A0B3;
+  box-shadow: 0 0 0 4px rgba(69, 160, 179, 0.15);
 }
 .contacto__group textarea {
   resize: none;
@@ -836,7 +852,7 @@ ul, ol {
 .contacto__button {
   grid-column: 1/-1;
   border: none;
-  background: #0b8a8f;
+  background: #45A0B3;
   color: white;
   height: 7rem;
   border-radius: 2rem;
@@ -886,7 +902,194 @@ ul, ol {
 .title {
   color: #086487;
   font-size: 3.6rem;
+  font-weight: 800;
+  letter-spacing: 0.05rem;
   text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1rem;
+}
+.title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6rem;
+  height: 0.4rem;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #086487, #45A0B3);
+}
+
+/* ==========================================
+   NAVBAR - MENÚ MÓVIL (HAMBURGUESA)
+========================================== */
+.navbar__toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 4rem;
+  height: 4rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+}
+.navbar__toggle span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+.navbar__toggle--active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.navbar__toggle--active span:nth-child(2) {
+  opacity: 0;
+}
+.navbar__toggle--active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* ==========================================
+   RESPONSIVE GENERAL
+========================================== */
+@media (max-width: 1200px) {
+  html {
+    font-size: 58%;
+  }
+
+  .servicios__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .proyectos__grid {
+    grid-template-columns: repeat(2, 28rem);
+  }
+}
+
+@media (max-width: 900px) {
+  .navbar__toggle {
+    display: flex;
+  }
+
+  .navbar__menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    background: linear-gradient(135deg, #086487, #45A0B3);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+  }
+
+  .navbar__menu--open {
+    max-height: 40rem;
+  }
+
+  .navbar__item {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar__link {
+    display: block;
+    padding: 1.5rem;
+  }
+
+  .nosotros-info {
+    flex-wrap: wrap;
+  }
+
+  .nosotros-info__box,
+  .nosotros-info__content {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 56%;
+  }
+
+  .hero {
+    height: 45rem;
+  }
+
+  .hero__contenido {
+    max-width: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .hero__title {
+    font-size: 3.2rem;
+  }
+
+  .hero__subtitle {
+    font-size: 1.8rem;
+  }
+
+  .hero-nosotros,
+  .hero-servicios,
+  .hero-proyectos,
+  .hero-contactenos {
+    height: 25rem;
+  }
+
+  .hero-nosotros__title,
+  .hero-servicios__title,
+  .hero-proyectos__title,
+  .hero-contactenos__title {
+    font-size: 3.2rem;
+    text-align: center;
+    padding: 0 2rem;
+  }
+
+  .clientes__title {
+    font-size: 2.6rem;
+  }
+
+  .title {
+    font-size: 2.8rem;
+  }
+
+  .servicios__grid,
+  .proyectos__grid {
+    grid-template-columns: 1fr;
+    justify-content: stretch;
+  }
+
+  .footer__description {
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 52%;
+  }
+
+  .navbar__logo img {
+    height: 5rem;
+  }
+
+  .footer__img {
+    width: 18rem;
+  }
+
+  .hero__btn {
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

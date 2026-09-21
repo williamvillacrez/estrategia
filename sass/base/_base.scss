@@ -1,4 +1,5 @@
 $font-Barlow: "Barlow", sans-serif;
+$font-Poppins: "Poppins", sans-serif;
 
 * {
     margin: 0;
@@ -19,6 +20,10 @@ html {
 body {
     font-family: $font-Barlow;
     line-height: 1.5;
+}
+
+h1, h2, h3 {
+    font-family: $font-Poppins;
 }
 
 a {
