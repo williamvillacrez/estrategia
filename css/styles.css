@@ -417,7 +417,7 @@ ul, ol {
 .clientes__hero {
   position: relative;
   height: 20rem;
-  background-image: url("../img/clientes.png");
+  background-image: url("../img/clientes.webp");
   background-size: cover;
   background-position: center;
   display: flex;

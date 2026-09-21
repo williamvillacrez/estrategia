@@ -1,0 +1,20 @@
+@import url("Cabin_Regular/stylesheet.css");
+.texto {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	color: #666666;
+	letter-spacing: 1px;
+}
+.textorojo {
+	font-family: "../fonts/Cabin-Regular.eot";
+	font-size: 12px;
+	font-style: normal;
+	color: #F00;
+}
+.textobottom {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	color: #95CCEA;
+}
